@@ -1,0 +1,55 @@
+POST http://localhost:3000/register/ 
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+###
+GET http://localhost:3000/user/following/ 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+###
+GET http://localhost:3000/user/followers/ 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+
+###6
+GET http://localhost:3000/tweets/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+###7
+GET http://localhost:3000/tweets/7/likes/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+###8
+GET http://localhost:3000/tweets/7/replies/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+###9
+GET http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+
+###10 
+POST http://localhost:3000/user/tweets/ 
+Content-Type: application/json 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
+{
+   "tweet": "The Mornings..."
+}
+
+###11
+DELETE http://localhost:3000/tweets/12/ 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzI0MDg1NzcyfQ.ukiFyOIfU5AznJ_I7xKG45ZZoinAthfh7QnmZvYOyGo
